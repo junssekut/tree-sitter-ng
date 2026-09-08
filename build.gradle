@@ -92,7 +92,10 @@ subprojects {
     }
 
     signing {
-        if (project.hasProperty('signing.keyId')) {
+        if (project.hasProperty('signWithGpgCmd')) {
+            useGpgCmd()
+            sign publishing.publications
+        } else if (project.hasProperty('signing.keyId')) {
             sign configurations.archives
             sign publishing.publications
         }
@@ -132,7 +135,7 @@ subprojects {
 
 nexusStaging {
     serverUrl = "https://s01.oss.sonatype.org/service/local/"
-    packageGroup = "io.github.bonede"
+    packageGroup = "io.github.junssekut"
     if (project.hasProperty('ossrhUsername') && project.hasProperty('ossrhPassword')) {
         username = ossrhUsername
         password = ossrhPassword
@@ -162,7 +165,7 @@ tasks.register("dropStagingRepo") {
         def client = HttpClient.newHttpClient()
 
         // Search for closed repositories
-        def searchUrl = "$baseUrl/manual/search/repositories?profile_id=io.github.bonede&state=closed&ip=any"
+        def searchUrl = "$baseUrl/manual/search/repositories?profile_id=io.github.junssekut&state=closed&ip=any"
         def searchReq = HttpRequest.newBuilder()
                 .uri(URI.create(searchUrl))
                 .header("Authorization", "Bearer $token")
@@ -204,7 +207,7 @@ tasks.register("postPublish") {
     description = "Upload staging deployment to Central Portal. Drops closed repos if needed."
     doLast {
         def baseUrl = "https://ossrh-staging-api.central.sonatype.com"
-        def namespace = "io.github.bonede"
+        def namespace = "io.github.junssekut"
         def token = Base64.encoder.encodeToString("$ossrhUsername:$ossrhPassword".getBytes())
         def client = HttpClient.newHttpClient()
 
