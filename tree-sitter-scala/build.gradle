@@ -1,8 +1,0 @@
-dependencies {
-    implementation project(":tree-sitter")
-}
-
-test{
-    useJUnitPlatform()
-    dependsOn downloadSource
-}

@@ -11,7 +11,7 @@ plugins {
 }
 
 allprojects {
-    group = 'io.github.bonede'
+    group = 'io.github.junssekut'
     repositories {
         mavenCentral()
     }
@@ -46,6 +46,10 @@ subprojects {
     publishing {
         repositories {
             maven {
+                name = "PublicRepo"
+                url = uri(project.findProperty("publicRepoDir") ?: "${rootProject.projectDir}/repository")
+            }
+            maven {
                 name = "MavenCentral"
                 def releasesRepoUrl = "https://ossrh-staging-api.central.sonatype.com/service/local/staging/deploy/maven2/"
                 def snapshotsRepoUrl =  "https://ossrh-staging-api.central.sonatype.com/content/repositories/snapshots/"
@@ -63,23 +67,23 @@ subprojects {
                 from components.java
                 pom {
                     name = project.name
-                    url = 'https://github.com/bonede/tree-sitter-ng'
-                    description = "Next generation Tree Sitter Java binding"
+                    url = 'https://github.com/junssekut/tree-sitter-ng'
+                    description = "Tree Sitter Java binding. Fork of bonede/tree-sitter-ng (MIT, by Wang Liang) with updated grammar versions."
                     licenses {
                         license {
                             name = 'MIT'
                         }
                     }
                     scm {
-                        connection = 'scm:git:https://github.com/bonede/tree-sitter-ng.git'
-                        developerConnection = 'scm:git:https://github.com/bonede/tree-sitter-ng.git'
-                        url = 'https://github.com/bonede/tree-sitter-ng'
+                        connection = 'scm:git:https://github.com/junssekut/tree-sitter-ng.git'
+                        developerConnection = 'scm:git:https://github.com/junssekut/tree-sitter-ng.git'
+                        url = 'https://github.com/junssekut/tree-sitter-ng'
                     }
                     developers {
                         developer {
-                            id = 'bonede'
-                            name = 'Wang Liang'
-                            email = 'bonede@qq.com'
+                            id = 'junssekut'
+                            name = 'junskii'
+                            url = 'https://github.com/junssekut'
                         }
                     }
                 }

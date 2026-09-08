@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.junssekut",
+    "module": "tree-sitter-swift",
+    "version": "0.7.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "tree-sitter-swift-0.7.3.jar",
+          "url": "tree-sitter-swift-0.7.3.jar",
+          "size": 1822818,
+          "sha512": "e5f3225bf56f105be04c23f5515d16d2d9a254864c4a090532c0c3b3fd0dc267ce617e436d7a1b5e12ce0b8e88f47568da87ae3a4ca0931e1846a277dbe077f5",
+          "sha256": "0d0e78927b7c7d85e4d50f863c739c9489bddd4386550bfc108ff22c7f6bf114",
+          "sha1": "c9c1a4fe2bfd173cf681daa8ad079e07e7e7dba6",
+          "md5": "801316d7a5b97d2d8183e95c9324db7a"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.github.junssekut",
+          "module": "tree-sitter",
+          "version": {
+            "requires": "0.26.6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "tree-sitter-swift-0.7.3.jar",
+          "url": "tree-sitter-swift-0.7.3.jar",
+          "size": 1822818,
+          "sha512": "e5f3225bf56f105be04c23f5515d16d2d9a254864c4a090532c0c3b3fd0dc267ce617e436d7a1b5e12ce0b8e88f47568da87ae3a4ca0931e1846a277dbe077f5",
+          "sha256": "0d0e78927b7c7d85e4d50f863c739c9489bddd4386550bfc108ff22c7f6bf114",
+          "sha1": "c9c1a4fe2bfd173cf681daa8ad079e07e7e7dba6",
+          "md5": "801316d7a5b97d2d8183e95c9324db7a"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "tree-sitter-swift-0.7.3-javadoc.jar",
+          "url": "tree-sitter-swift-0.7.3-javadoc.jar",
+          "size": 91193,
+          "sha512": "e4dc11dc499a3a85762f2f6ca812c326d066bc1129af4ab5106d1bae4ef7d8b025aaa83c97f083a3cb16212cce8be2df514c358e9ef6df1eae82eca1d1c40545",
+          "sha256": "e5d3304c2633dfc94ca7ebeaf13f403fb584e0b6ccf3f36021b8aa8954ef34fa",
+          "sha1": "a0a637a9ed9131b700979bc1777a6d81c2be7244",
+          "md5": "31f890ad3451e665625cf3f5484c6301"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "tree-sitter-swift-0.7.3-sources.jar",
+          "url": "tree-sitter-swift-0.7.3-sources.jar",
+          "size": 1822595,
+          "sha512": "d3c903dc1393dd93086de4094838c97860709804fb4a220147336b5b918d9503f5a0a4cbe78939d7dde7f77cc184dfaf7730a9849cd35315a8c435d3aeacb6d0",
+          "sha256": "d51b83559e0847864b8e30052aa4cd11282d4f5e8d4faa03fef5803d3f428e5a",
+          "sha1": "4b5a5bc50d340d8c8ba49bb4ac5e5aca92a4a438",
+          "md5": "3d312cd56f4971d7c26455fb965c7d42"
+        }
+      ]
+    }
+  ]
+}

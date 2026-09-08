@@ -114,6 +114,7 @@ class BuildNativeTask extends DefaultTask{
             include("**/*.c")
             include("**/*.h")
             include("**/*.cpp")
+            exclude("**/parser_abi*.c")
         }
     }
 
@@ -122,6 +123,7 @@ class BuildNativeTask extends DefaultTask{
         srcDir.dir("src").asFileTree.matching {
             include("**/*.c")
             include("**/*.cpp")
+            exclude("**/parser_abi*.c")
         }
     }
 

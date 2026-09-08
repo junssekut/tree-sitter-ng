@@ -1,0 +1,5 @@
+version="0.7.3"
+
+tasks.named('downloadSource') {
+    url = "https://github.com/alex-pinkus/tree-sitter-swift/archive/refs/tags/0.7.3-with-generated-files.zip"
+}
