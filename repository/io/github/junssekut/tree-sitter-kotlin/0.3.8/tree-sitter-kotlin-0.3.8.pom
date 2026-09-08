@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.github.junssekut</groupId>
+  <artifactId>tree-sitter-kotlin</artifactId>
+  <version>0.3.8</version>
+  <name>tree-sitter-kotlin</name>
+  <description>Tree Sitter Java binding. Fork of bonede/tree-sitter-ng (MIT, by Wang Liang) with updated grammar versions.</description>
+  <url>https://github.com/junssekut/tree-sitter-ng</url>
+  <licenses>
+    <license>
+      <name>MIT</name>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>junssekut</id>
+      <name>junskii</name>
+      <url>https://github.com/junssekut</url>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:https://github.com/junssekut/tree-sitter-ng.git</connection>
+    <developerConnection>scm:git:https://github.com/junssekut/tree-sitter-ng.git</developerConnection>
+    <url>https://github.com/junssekut/tree-sitter-ng</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>io.github.junssekut</groupId>
+      <artifactId>tree-sitter</artifactId>
+      <version>0.26.6</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+</project>

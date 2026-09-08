@@ -2,3 +2,5 @@ rootProject.name = 'tree-sitter-ng'
 include 'tree-sitter'
 include 'tree-sitter-tests'
 include 'tree-sitter-swift'
+
+include 'tree-sitter-kotlin'

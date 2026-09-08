@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.junssekut",
+    "module": "tree-sitter-kotlin",
+    "version": "0.3.8",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "tree-sitter-kotlin-0.3.8.jar",
+          "url": "tree-sitter-kotlin-0.3.8.jar",
+          "size": 1746354,
+          "sha512": "bebcc81ce57ebba5115cf41ed6ee80f488ce497a81e2d41ae7d87398d458d901734f29ea6ea26f3a36b19b452b2cf71ed4bdb31aef89f4b60ec28942effea40e",
+          "sha256": "4d285c83e6bb19ac9bfe1237350e21b8f3d43633edc6453779c514c261b3820f",
+          "sha1": "032ef2088416dcc60d98cade509e656630207c0e",
+          "md5": "bca638a7e04b5cf0aace3a172e938632"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.github.junssekut",
+          "module": "tree-sitter",
+          "version": {
+            "requires": "0.26.6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "tree-sitter-kotlin-0.3.8.jar",
+          "url": "tree-sitter-kotlin-0.3.8.jar",
+          "size": 1746354,
+          "sha512": "bebcc81ce57ebba5115cf41ed6ee80f488ce497a81e2d41ae7d87398d458d901734f29ea6ea26f3a36b19b452b2cf71ed4bdb31aef89f4b60ec28942effea40e",
+          "sha256": "4d285c83e6bb19ac9bfe1237350e21b8f3d43633edc6453779c514c261b3820f",
+          "sha1": "032ef2088416dcc60d98cade509e656630207c0e",
+          "md5": "bca638a7e04b5cf0aace3a172e938632"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "tree-sitter-kotlin-0.3.8-javadoc.jar",
+          "url": "tree-sitter-kotlin-0.3.8-javadoc.jar",
+          "size": 91221,
+          "sha512": "f2700779279d008696eec1e879052a30c3bc033e80180714fc939bda5d19694a098fa52afc9785e1a45001c8df44aced86ee630f7ee9f44e692bb6f7e9b1bb8e",
+          "sha256": "96e307906812c00c0bc8ec123cb0e050f8865fd49a08b433316ba73b30e9bfe2",
+          "sha1": "a3fe17b3f9a21e8bfccf89db05f76fa826843a26",
+          "md5": "7fad1335222119fae65788b93461b10f"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "tree-sitter-kotlin-0.3.8-sources.jar",
+          "url": "tree-sitter-kotlin-0.3.8-sources.jar",
+          "size": 1746133,
+          "sha512": "ea0483037e6410ebb52e379e1952ee04324e24982e3af8b3d8dbb0343351639ed36a805a5a80638401cc13eb697274a80efc3bc6a14a334215b4aa39a72b8d38",
+          "sha256": "8b76a2b6882429a44066e74f0448aab29b4b67f1c51373fe3562dd916cc5f3f8",
+          "sha1": "c825bc73e66efc8572cac9dbc67816d70f4cb255",
+          "md5": "1bbf2c55b1e10d773a6eb65b686b8cb1"
+        }
+      ]
+    }
+  ]
+}
